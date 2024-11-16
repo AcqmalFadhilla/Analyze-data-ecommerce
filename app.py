@@ -48,7 +48,7 @@ st.title("Dashboard")
 # overlaid on an image of Brazil. Here's a breakdown of what each part of the code is doing:
 col1, col2 = st.columns(2)
 with col1:
-    brazil = mpimg.imread(urllib.request.urlopen('https://i.pinimg.com/originals/3a/0c/e1/3a0ce18b3c842748c255bc0aa445ad41.jpg'),'jpg')
+    brazil = mpimg.imread("brazil_map.jpg",'jpg')
     fig, ax = plt.subplots(figsize=(10, 12))
     geografis_df.plot(kind="scatter", x="geolocation_lng", y="geolocation_lat", ax=ax, s=0.5)
     ax.imshow(brazil, extent=[-73.98283055, -33.8,-33.75116944,5.4], aspect='auto')
