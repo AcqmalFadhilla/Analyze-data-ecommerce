@@ -29,20 +29,6 @@ class Data:
         else:
             raise ValueError("Invalid option provided")
 
-
-    def geografis_analysis(self, df_geoloc):
-        distribution_customer = pd.merge(
-        left=self.df,
-        right=df_geoloc,
-        how="inner",
-        left_on="customer_zip_code_prefix",
-        right_on="geolocation_zip_code_prefix"
-        )
-
-        distribution_customer.drop(columns=["geolocation_city", "geolocation_state", "geolocation_zip_code_prefix"], inplace=True)
-
-        return distribution_customer.drop_duplicates("customer_unique_id")
-
     def customer_grow_analysis(self, option: str = "month"):
         self.df["order_purchase_timestamp"] = pd.to_datetime(self.df["order_purchase_timestamp"])
         if option == "year":
