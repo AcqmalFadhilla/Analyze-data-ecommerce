@@ -1,5 +1,5 @@
 # Data Analysis E-Commerce
-
+ Proyek ini bertujuan untuk menganalisis data pada E-Commerce Public Dataset. Tujuan akhirnya adalah untuk menghasilkan wawasan dan informasi yang berguna dari data yang dianalisis.
 ## Business problem
 1. Lokasi geografis manakah yang memiliki pelanggan terbanyak?
    Berdasarkan data geografis, mayoritas pelanggan berasal dari wilayah selatan dan tenggara Brasil, dengan konsentrasi pelanggan tinggi di kota-kota besar seperti São Paulo, Rio de Janeiro, dan Belo Horizonte. Hal ini menunjukkan bahwa area perkotaan di wilayah tersebut memiliki aktivitas belanja online yang lebih tinggi dibandingkan wilayah lainnya.
