@@ -9,8 +9,8 @@ from utils import Data
 st.set_page_config(layout="wide")
 
 # load data
-df_all = pd.read_csv("data/df_all.csv")
-df_geoloc = pd.read_csv("data/geolocation_dataset.csv")
+df_all = pd.read_csv("df_all.csv")
+df_geoloc = pd.read_csv("geolocation_dataset.csv")
 data = Data(df_all)
 
 
